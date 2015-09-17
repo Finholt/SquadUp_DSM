@@ -16,6 +16,62 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".signup"
+            android:label="@string/title_activity_signup"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.suncoindustries.squadupdsm.MainActivity" />
+        </activity>
+        <activity
+            android:name=".quiz"
+            android:label="@string/title_activity_quiz"
+            android:parentActivityName=".signup" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.suncoindustries.squadupdsm.signup" />
+        </activity>
+        <activity
+            android:name=".profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.suncoindustries.squadupdsm.MainActivity" />
+        </activity>
+        <activity
+            android:name=".events"
+            android:label="@string/title_activity_events"
+            android:parentActivityName=".profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.suncoindustries.squadupdsm.profile" />
+        </activity>
+        <activity
+            android:name=".squad"
+            android:label="@string/title_activity_squad"
+            android:parentActivityName=".profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.suncoindustries.squadupdsm.profile" />
+        </activity>
+        <activity
+            android:name=".other_profile"
+            android:label="@string/title_activity_other_profile"
+            android:parentActivityName=".profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.suncoindustries.squadupdsm.profile" />
+        </activity>
+        <activity
+            android:name=".settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.suncoindustries.squadupdsm.profile" />
+        </activity>
     </application>
 
 </manifest>
