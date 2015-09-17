@@ -1,9 +1,11 @@
 package com.suncoindustries.squadupdsm;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class quiz extends AppCompatActivity {
 
@@ -11,6 +13,12 @@ public class quiz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+    }
+
+    public void completeSignUpProcedure(View view)
+    {
+        Intent intent = new Intent(this, profile.class);
+        startActivity(intent);
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.suncoindustries.squadupdsm;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -44,6 +45,12 @@ public class profile extends AppCompatActivity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+    }
+
+    public void otherProfileProcedure(View view)
+    {
+        Intent intent = new Intent(this, other_profile.class);
+        startActivity(intent);
     }
 
     @Override
