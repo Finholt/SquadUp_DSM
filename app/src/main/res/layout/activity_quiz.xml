@@ -6,6 +6,14 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.suncoindustries.squadupdsm.quiz">
 
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feedbacktitle"
+        android:textSize="10pt">
+    </TextView>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -13,6 +21,8 @@
         android:text="Submit"
         android:textAllCaps="false"
         android:onClick="completeSignUpProcedure"
-        />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
