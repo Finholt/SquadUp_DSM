@@ -6,13 +6,49 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.RadioButton;
 
 public class quiz extends AppCompatActivity {
+
+    EditText name = (EditText)findViewById(R.id.editText1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+    }
+
+    public void onRadioButtonClicked(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+
+        switch (view.getId()){
+            case R.id.he:
+                if(checked)
+                    //
+                break;
+            case R.id.she:
+                //
+                break;
+            case R.id.them:
+                //
+                break;
+        }
+        // Check which radio button was clicked
+        switch (view.getId()) {
+            case R.id.radio_superman:
+                if (checked)
+                    // insert into database
+                    break;
+            case R.id.radio_spiderman:
+                if (checked)
+                    // insert into database
+                    break;
+            case R.id.radio_batman:
+                if(checked)
+                    //insert into database
+                    break;
+        }
     }
 
     public void completeSignUpProcedure(View view)
