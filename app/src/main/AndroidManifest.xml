@@ -68,6 +68,22 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_login" >
         </activity>
+        <activity
+            android:name=".InterestQuiz2"
+            android:label="@string/title_activity_interest_quiz2"
+            android:parentActivityName=".InterestQuiz" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.suncoindustries.squadupdsm.InterestQuiz" />
+        </activity>
+        <activity
+            android:name=".SquadChat"
+            android:label="@string/title_activity_squad_chat"
+            android:parentActivityName=".UserProfile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.suncoindustries.squadupdsm.UserProfile" />
+        </activity>
     </application>
 
 </manifest>
