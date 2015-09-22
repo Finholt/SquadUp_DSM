@@ -26,7 +26,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="72dp"
-        android:hint="Password" />
+        android:hint="New Password" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
         android:layout_alignLeft="@+id/editText"
         android:layout_alignStart="@+id/editText"
         android:layout_marginTop="37dp"
-        android:hint="Email"/>
+        android:hint="Enter Email"/>
 
 
 </RelativeLayout>
