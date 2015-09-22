@@ -12,8 +12,8 @@ import android.widget.Toast;
 public class Login extends AppCompatActivity {
 
     //int counter = 3;
-    EditText username = (EditText)findViewById(R.id.editText1);
-    EditText password = (EditText)findViewById(R.id.editText2);
+    EditText username = (EditText)findViewById(R.id.password);
+    EditText password = (EditText)findViewById(R.id.email);
     public void login(View view) {
         if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
             Intent intent = new Intent(this, profile.class);
