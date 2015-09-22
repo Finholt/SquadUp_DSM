@@ -9,14 +9,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Login extends AppCompatActivity {
+public class LoginC extends AppCompatActivity {
 
     //int counter = 3;
     EditText username = (EditText)findViewById(R.id.password);
     EditText password = (EditText)findViewById(R.id.email);
     public void login(View view) {
         if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
-            Intent intent = new Intent(this, profile.class);
+            Intent intent = new Intent(this, UserProfileC.class);
             startActivity(intent);
         }
         else {
@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity {
         }
 
     public void Register (View view){
-        Intent intent = new Intent(this,signup.class);
+        Intent intent = new Intent(this,SignUpC.class);
         startActivity(intent);
     }
     @Override

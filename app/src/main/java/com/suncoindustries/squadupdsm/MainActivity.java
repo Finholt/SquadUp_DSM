@@ -17,13 +17,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void loginProcedure(View view)
     {
-        Intent intent = new Intent(this, profile.class);
+        Intent intent = new Intent(this, UserProfileC.class);
         startActivity(intent);
     }
 
     public void signUpProcedure(View view)
     {
-        Intent intent = new Intent(this, signup.class);
+        Intent intent = new Intent(this, SignUpC.class);
+        startActivity(intent);
+    }
+
+    public void otherLogin (View view)
+    {
+        Intent intent = new Intent(this, LoginC.class);
         startActivity(intent);
     }
 

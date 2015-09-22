@@ -9,14 +9,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
-public class quiz extends AppCompatActivity {
+public class InterestQuizC extends AppCompatActivity {
 
     EditText name = (EditText)findViewById(R.id.EditTextName);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.activity_interest_quiz);
     }
 
     public void onRadioButtonClicked(View view) {
@@ -53,7 +53,7 @@ public class quiz extends AppCompatActivity {
 
     public void completeSignUpProcedure(View view)
     {
-        Intent intent = new Intent(this, profile.class);
+        Intent intent = new Intent(this, UserProfileC.class);
         startActivity(intent);
     }
 

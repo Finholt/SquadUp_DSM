@@ -23,4 +23,13 @@
         android:layout_below="@+id/LoginButton"
         android:onClick="signUpProcedure"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/OtherButton"
+        android:text="Other"
+        android:textAllCaps="false"
+        android:layout_below="@+id/SignUpButton"
+        android:onClick="otherLogin"/>
+
 </RelativeLayout>
