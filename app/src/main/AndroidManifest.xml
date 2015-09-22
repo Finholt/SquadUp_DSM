@@ -18,51 +18,27 @@
         </activity>
         <activity
             android:name=".SignUp"
-            android:label="@string/title_activity_signup"
-            android:parentActivityName=".Login" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.suncoindustries.squadupdsm.Login" />
+            android:label="@string/title_activity_signup">
         </activity>
         <activity
             android:name=".InterestQuiz"
-            android:label="@string/title_activity_quiz"
-            android:parentActivityName=".SignUp" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SignUp" />
+            android:label="@string/title_activity_quiz">
         </activity>
         <activity
             android:name=".UserProfile"
-            android:label="@string/title_activity_profile"
-            android:parentActivityName=".Login" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.suncoindustries.squadupdsm.Login" />
+            android:label="@string/title_activity_profile">
         </activity>
         <activity
             android:name=".Events"
-            android:label="@string/title_activity_events"
-            android:parentActivityName=".UserProfile" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".UserProfile" />
+            android:label="@string/title_activity_events">
         </activity>
         <activity
             android:name=".OtherProfile"
-            android:label="@string/title_activity_other_profile"
-            android:parentActivityName=".UserProfile" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".UserProfile" />
+            android:label="@string/title_activity_other_profile">
         </activity>
         <activity
             android:name=".Settings"
-            android:label="@string/title_activity_settings"
-            android:parentActivityName=".UserProfile" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".UserProfile" />
+            android:label="@string/title_activity_settings">
         </activity>
         <activity
             android:name=".MainActivity"
@@ -70,19 +46,11 @@
         </activity>
         <activity
             android:name=".InterestQuiz2"
-            android:label="@string/title_activity_interest_quiz2"
-            android:parentActivityName=".InterestQuiz" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.suncoindustries.squadupdsm.InterestQuiz" />
+            android:label="@string/title_activity_interest_quiz2">
         </activity>
         <activity
             android:name=".SquadChat"
-            android:label="@string/title_activity_squad_chat"
-            android:parentActivityName=".UserProfile" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.suncoindustries.squadupdsm.UserProfile" />
+            android:label="@string/title_activity_squad_chat">
         </activity>
     </application>
 
