@@ -9,14 +9,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
-public class InterestQuiz extends AppCompatActivity {
+public class quiz extends AppCompatActivity {
 
-    //EditText name = (EditText)findViewById(R.id.EditTextName);
+    EditText name = (EditText)findViewById(R.id.username);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_interest_quiz);
+        setContentView(R.layout.activity_quiz);
     }
 
     public void onRadioButtonClicked(View view) {
@@ -38,22 +38,22 @@ public class InterestQuiz extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.radio_superman:
                 if (checked)
-                    // insert into database
+                 //
                     break;
             case R.id.radio_spiderman:
                 if (checked)
-                    // insert into database
+                    //
                     break;
             case R.id.radio_batman:
                 if(checked)
-                    //insert into database
+                    //
                     break;
         }
     }
 
     public void completeSignUpProcedure(View view)
     {
-        Intent intent = new Intent(this, UserProfile.class);
+        Intent intent = new Intent(this, profile.class);
         startActivity(intent);
     }
 
