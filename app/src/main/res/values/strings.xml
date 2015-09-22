@@ -23,4 +23,6 @@
     <string name="prompt_email">Email</string>
     <string name="action_sign_in_short">Login to SquadUp</string>
     <string name="title_activity_login">Login</string>
+    <string name="title_activity_interest_quiz2">InterestQuiz2</string>
+    <string name="title_activity_squad_chat">SquadChat</string>
 </resources>

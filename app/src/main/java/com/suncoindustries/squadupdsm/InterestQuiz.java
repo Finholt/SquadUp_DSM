@@ -51,9 +51,9 @@ public class InterestQuiz extends AppCompatActivity {
         }
     }
 
-    public void completeSignUpProcedure(View view)
+    public void nextQuizProcedure(View view)
     {
-        Intent intent = new Intent(this, UserProfile.class);
+        Intent intent = new Intent(this, InterestQuiz2.class);
         startActivity(intent);
     }
 

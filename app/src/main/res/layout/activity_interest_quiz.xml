@@ -99,10 +99,10 @@
 <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/SubmitButton"
-        android:text="Submit"
+        android:id="@+id/NextQuizButton"
+        android:text="Next"
         android:textAllCaps="false"
-        android:onClick="completeSignUpProcedure"
+        android:onClick="nextQuizProcedure"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
