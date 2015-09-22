@@ -11,7 +11,7 @@ import android.widget.RadioButton;
 
 public class InterestQuiz extends AppCompatActivity {
 
-    EditText name = (EditText)findViewById(R.id.EditTextName);
+    //EditText name = (EditText)findViewById(R.id.EditTextName);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
