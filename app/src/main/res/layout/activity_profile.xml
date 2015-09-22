@@ -6,7 +6,26 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.suncoindustries.squadupdsm.UserProfile">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ToOtherProfButton"
+        android:text="Other Profile"
+        android:textAllCaps="false"
+        android:onClick="toOtherProfileProcedure"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/ToEventsButton"
+        android:text="Suggested Events"
+        android:textAllCaps="false"
+        android:onClick="toEventsProcedure"
+        android:layout_above="@+id/ToOtherProfButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
