@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignUpC"
+            android:name=".SignUp"
             android:label="@string/title_activity_signup"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -25,15 +25,15 @@
                 android:value="com.suncoindustries.squadupdsm.MainActivity" />
         </activity>
         <activity
-            android:name=".InterestQuizC"
+            android:name=".InterestQuiz"
             android:label="@string/title_activity_quiz"
-            android:parentActivityName=".SignUpC" >
+            android:parentActivityName=".SignUp" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SignUpC" />
+                android:value=".SignUp" />
         </activity>
         <activity
-            android:name=".UserProfileC"
+            android:name=".UserProfile"
             android:label="@string/title_activity_profile"
             android:parentActivityName=".MainActivity" >
             <meta-data
@@ -41,31 +41,31 @@
                 android:value="com.suncoindustries.squadupdsm.MainActivity" />
         </activity>
         <activity
-            android:name=".EventsC"
+            android:name=".Events"
             android:label="@string/title_activity_events"
-            android:parentActivityName=".UserProfileC" >
+            android:parentActivityName=".UserProfile" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".UserProfileC" />
+                android:value=".UserProfile" />
         </activity>
         <activity
-            android:name=".OtherProfileC"
+            android:name=".OtherProfile"
             android:label="@string/title_activity_other_profile"
-            android:parentActivityName=".UserProfileC" >
+            android:parentActivityName=".UserProfile" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".UserProfileC" />
+                android:value=".UserProfile" />
         </activity>
         <activity
-            android:name=".SettingsC"
+            android:name=".Settings"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".UserProfileC" >
+            android:parentActivityName=".UserProfile" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".UserProfileC" />
+                android:value=".UserProfile" />
         </activity>
         <activity
-            android:name=".LoginC"
+            android:name=".Login"
             android:label="@string/title_activity_login" >
         </activity>
     </application>

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
-public class InterestQuizC extends AppCompatActivity {
+public class InterestQuiz extends AppCompatActivity {
 
     EditText name = (EditText)findViewById(R.id.EditTextName);
 
@@ -53,7 +53,7 @@ public class InterestQuizC extends AppCompatActivity {
 
     public void completeSignUpProcedure(View view)
     {
-        Intent intent = new Intent(this, UserProfileC.class);
+        Intent intent = new Intent(this, UserProfile.class);
         startActivity(intent);
     }
 

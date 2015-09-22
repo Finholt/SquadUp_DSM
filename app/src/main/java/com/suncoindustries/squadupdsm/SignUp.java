@@ -6,42 +6,25 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
 
-public class LoginC extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
 
-    //int counter = 3;
-    EditText username = (EditText)findViewById(R.id.password);
-    EditText password = (EditText)findViewById(R.id.email);
-    public void login(View view) {
-        if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
-            Intent intent = new Intent(this, UserProfileC.class);
-            startActivity(intent);
-        }
-        else {
-            //wrong password
-            Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
-            //counter--;
-            //if(counter==0){
-
-            }
-        }
-
-    public void Register (View view){
-        Intent intent = new Intent(this,SignUpC.class);
-        startActivity(intent);
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login2);
+        setContentView(R.layout.activity_signup);
+    }
+
+    public void toQuizProcedure(View view)
+    {
+        Intent intent = new Intent(this, InterestQuiz.class);
+        startActivity(intent);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login, menu);
+        getMenuInflater().inflate(R.menu.menu_signup, menu);
         return true;
     }
 
