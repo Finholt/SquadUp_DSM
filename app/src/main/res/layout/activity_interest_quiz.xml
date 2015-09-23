@@ -52,14 +52,16 @@
                 </LinearLayout>
     </ScrollView>
 <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/NextQuizButton"
-        android:text="Next"
-        android:textAllCaps="false"
-        android:onClick="nextQuizProcedure"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/NextQuizButton"
+    android:text="Next"
+    android:onClick="nextQuizProcedure"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:textAllCaps="false"
+    android:textColor="@color/button_text"
+    android:background="@drawable/style_button1"/>
 
 </RelativeLayout>
