@@ -15,7 +15,9 @@
         android:onClick="toOtherProfileProcedure"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/button_text"
+        android:background="@drawable/style_button1"/>
 
     <Button
         android:layout_width="match_parent"
@@ -26,7 +28,9 @@
         android:onClick="toEventsProcedure"
         android:layout_above="@+id/ToOtherProfButton"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/button_text"
+        android:background="@drawable/style_button1"/>
 
     <Button
         android:layout_width="match_parent"
@@ -37,6 +41,8 @@
         android:onClick="toChatProcedure"
         android:layout_above="@+id/ToEventsButton"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/button_text"
+        android:background="@drawable/style_button1"/>
 
 </RelativeLayout>
