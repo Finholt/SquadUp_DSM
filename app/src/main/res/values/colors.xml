@@ -2,4 +2,7 @@
 <resources>
     <color name="actionbar_background">#E15C6F</color>
     <color name="actionbar_text">#ffffff</color>
+    <color name="unpressed_button">#D1465B</color>
+    <color name="pressed_button">#E15C6F</color>
+    <color name="button_text">#ffffff</color>
 </resources>
