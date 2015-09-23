@@ -176,10 +176,12 @@
                 android:id="@+id/ToQuizButton"
                 android:text="Submit"
                 android:textAllCaps="false"
-                android:onClick="toQuizProcedure"
+                android:onClick="toProfProcedure"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/style_button1"
+                android:textColor="@color/button_text"/>
 
         </RelativeLayout>
     </LinearLayout>
