@@ -183,6 +183,36 @@
                 android:background="@drawable/style_button1"
                 android:textColor="@color/button_text"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Friday, Sept. 25th"
+                android:id="@+id/textView7"
+                android:layout_below="@+id/checkBox11"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:00 AM      Cooking with Sarah"
+                android:id="@+id/checkBox12"
+                android:checked="false"
+                android:layout_below="@+id/textView7"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7:00 PM      Dancing with the DJ"
+                android:id="@+id/checkBox13"
+                android:layout_below="@+id/checkBox12"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:checked="false" />
+
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>
