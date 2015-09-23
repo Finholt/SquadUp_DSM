@@ -6,8 +6,25 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RadioButton;
 
 public class InterestQuiz2 extends AppCompatActivity {
+
+    public void onRadioButtonClicked(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch (view.getId()) {
+            case R.id.radio_yes:
+                if (checked)
+                //
+                    break;
+            case R.id.radio_no:
+                if (checked)
+                //
+                    break;
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
