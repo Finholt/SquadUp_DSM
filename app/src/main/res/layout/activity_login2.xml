@@ -36,22 +36,29 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
         android:onClick="login"
         android:text="Login"
         android:layout_below="@+id/password"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text"
+        android:background="@drawable/style_button1"/>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="Register"
         android:text="Register"
         android:layout_below="@+id/button1"
         android:layout_alignLeft="@+id/button1"
-        android:layout_alignStart="@+id/button1" />
+        android:layout_alignStart="@+id/button1"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text"
+        android:background="@drawable/style_button1"/>
 
 </RelativeLayout>
 
