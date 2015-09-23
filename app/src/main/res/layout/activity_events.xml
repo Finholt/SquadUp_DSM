@@ -115,7 +115,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7:00 AM      Morning Circus: Strength and Flexibility"
+                android:text="7:00 AM"
                 android:id="@+id/checkBox7"
                 android:layout_below="@+id/textView5"
                 android:layout_alignParentLeft="true"
@@ -125,7 +125,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5:00 PM      Spirits of the North"
+                android:text="5:00 PM"
                 android:id="@+id/checkBox8"
                 android:layout_below="@+id/checkBox7"
                 android:layout_alignParentLeft="true"
@@ -140,7 +140,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:checked="false"
-                android:text="7:00 PM      Trigger Music Live: Three Headliners" />
+                android:text="7:00 PM" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -238,7 +238,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4:00 PM      "
+                android:text="4:00 PM"
                 android:id="@+id/checkBox15"
                 android:checked="false"
                 android:layout_below="@+id/checkBox14"
@@ -262,11 +262,13 @@
                 android:text="Team Trivia"
                 android:id="@+id/textView9"
                 android:layout_below="@+id/checkBox5"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
                 android:layout_toRightOf="@+id/checkBox6"
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox6"
                 android:layout_alignTop="@+id/checkBox6"
-                android:gravity="center"/>
+                android:gravity="center" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -281,6 +283,51 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox5"
                 android:layout_alignTop="@+id/checkBox5"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Morning Circus: Strength"
+                android:id="@+id/textView11"
+                android:layout_above="@+id/checkBox8"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_toRightOf="@+id/checkBox7"
+                android:layout_toEndOf="@+id/checkBox2"
+                android:layout_alignBottom="@+id/checkBox7"
+                android:layout_alignTop="@+id/checkBox7"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Spirits of the North"
+                android:id="@+id/textView12"
+                android:layout_below="@+id/textView11"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_toRightOf="@+id/checkBox8"
+                android:layout_toEndOf="@+id/checkBox2"
+                android:layout_alignBottom="@+id/checkBox8"
+                android:layout_alignTop="@+id/checkBox8"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/textView13"
+                android:layout_below="@+id/textView12"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_toRightOf="@+id/checkBox9"
+                android:layout_toEndOf="@+id/checkBox2"
+                android:layout_alignBottom="@+id/checkBox9"
+                android:layout_alignTop="@+id/checkBox9"
                 android:gravity="center" />
 
         </RelativeLayout>
