@@ -16,7 +16,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:orientation="vertical"
-                    android:layout_height="fill_parent">
+            android:layout_height="fill_parent">
                     <TextView
                         android:id="@+id/TextViewTitle"
                         android:layout_width="wrap_content"
@@ -35,23 +35,183 @@
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true">
                     </EditText>
-                        <TextView
-                            android:id="@+id/Pronoun"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="2. What is your preferred pronoun?"
-                            android:textSize="10pt">
-                        </TextView>
+    <TextView
+        android:id="@+id/Pronoun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. What is your preferred pronoun?"
+        android:textSize="10pt">
+    </TextView>
 
-                    <Spinner
-                        android:id="@+id/pronouns"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:drawable/btn_dropdown"
-                        android:spinnerMode="dropdown" />
-                </LinearLayout>
-    </ScrollView>
-<Button
+    <Spinner
+        android:id="@+id/pronouns"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/Interests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Interests (Select all that apply)"
+                android:textSize="10pt">
+            </TextView>
+                <CheckBox android:id="@+id/checkbox_Circus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Circus"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_gravity="center_horizontal" />
+
+                <CheckBox android:id="@+id/checkbox_Culinary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Culinary"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/ScrollView01"
+                    android:layout_centerHorizontal="true" />
+
+                <CheckBox android:id="@+id/checkbox_Dance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dance"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/ScrollView01"
+                    android:layout_centerHorizontal="true" />
+
+                <CheckBox android:id="@+id/checkbox_Education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Education"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/ScrollView01"
+                    android:layout_centerHorizontal="true" />
+
+              <CheckBox android:id="@+id/checkbox_Film"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Film"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/ScrollView01"
+                    android:layout_centerHorizontal="true" />
+
+            <CheckBox android:id="@+id/checkbox_Kids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kids"
+                android:onClick="onCheckboxClicked"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/ScrollView01"
+                android:layout_centerHorizontal="true" />
+
+            <CheckBox android:id="@+id/checkbox_Literary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Literary"
+                android:onClick="onCheckboxClicked"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/ScrollView01"
+                android:layout_centerHorizontal="true" />
+
+            <CheckBox android:id="@+id/checkbox_Music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music"
+                android:onClick="onCheckboxClicked"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/ScrollView01"
+                android:layout_centerHorizontal="true" />
+
+            <CheckBox android:id="@+id/checkbox_Social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Social"
+                android:onClick="onCheckboxClicked"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/ScrollView01"
+                android:layout_centerHorizontal="true" />
+
+            <CheckBox android:id="@+id/checkbox_Theatre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Theatre"
+                android:onClick="onCheckboxClicked"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/ScrollView01"
+                android:layout_centerHorizontal="true" />
+
+            <CheckBox android:id="@+id/checkbox_Visual_Art"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visual Art"
+                android:onClick="onCheckboxClicked"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/ScrollView01"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/Coed_quad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Co-ed Squad?"
+                android:layout_gravity="center_horizontal"
+                android:textSize="10pt">
+            </TextView>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/radio_squad"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+            <RadioButton android:id="@+id/radio_His"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="His Squad"
+                android:onClick="onRadioButtonClicked"
+                android:layout_gravity="start"
+                android:layout_weight="1"/>
+
+            <RadioButton android:id="@+id/radio_Her"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Her Squad"
+                android:layout_gravity="center"
+                android:onClick="onRadioButtonClicked"
+                android:layout_weight="1"/>
+
+
+            <RadioButton android:id="@+id/radio_Mixed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mixed Squad"
+                android:layout_gravity="end"
+                android:onClick="onRadioButtonClicked" />
+            </RadioGroup>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Import"
+        android:text="Import Google Calendar"
+        android:onClick="interest_quiz"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:textColor="@color/button_text"
+        android:background="@drawable/style_button1"/>
+
+    <Button
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:id="@+id/NextQuizButton"
@@ -63,5 +223,8 @@
     android:textAllCaps="false"
     android:textColor="@color/button_text"
     android:background="@drawable/style_button1"/>
+</LinearLayout>
 
+
+    </ScrollView>
 </RelativeLayout>
