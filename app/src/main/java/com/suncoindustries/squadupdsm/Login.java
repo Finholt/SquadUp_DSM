@@ -13,23 +13,12 @@ public class Login extends AppCompatActivity {
 
     //int counter = 3;
     public void login(View view) {
-        EditText username = (EditText)findViewById(R.id.password);
-        EditText password = (EditText)findViewById(R.id.email);
-        if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
-            Intent intent = new Intent(this, UserProfile.class);
-            startActivity(intent);
-        }
-        else {
-            //wrong password
-            Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
-            //counter--;
-            //if(counter==0){
-
-            }
-        }
+        Intent intent = new Intent(this, UserProfile.class);
+        startActivity(intent);
+    }
 
     public void Register (View view){
-        Intent intent = new Intent(this,SignUp.class);
+        Intent intent = new Intent(this,InterestQuiz.class);
         startActivity(intent);
     }
     @Override
