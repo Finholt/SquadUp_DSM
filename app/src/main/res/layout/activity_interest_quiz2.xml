@@ -1,191 +1,217 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.suncoindustries.squadupdsm.InterestQuiz2">
 
-    <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/ScrollView01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scrollbars="vertical">
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:orientation="vertical"
-        android:layout_height="fill_parent">
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/radio_travel"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/travel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Would you ever kick it and travel the world alone?"
-        android:textSize="10pt"
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_travel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
 
-        android:layout_below="@+id/radio_travel"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-    </TextView>
-        <RadioButton android:id="@+id/radio_yes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Yes please."
-            android:onClick="onRadioButtonClicked"
-            android:layout_below="@+id/radio_yes"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/travel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/radio_travel"
+                    android:text="Would you ever kick it and travel the world alone?"
+                    android:textSize="10pt"
+                    android:textColor="@color/general_text"/>
 
-        <RadioButton android:id="@+id/radio_no"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="No thank you."
-        android:onClick="onRadioButtonClicked"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+                <RadioButton
+                    android:id="@+id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/radio_yes"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Yes please."
+                    android:textColor="@color/general_text"/>
 
-
-</RadioGroup>
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/scary"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+                <RadioButton
+                    android:id="@+id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="No thank you."
+                    android:textColor="@color/general_text"/>
 
 
+            </RadioGroup>
 
-    <TextView
-        android:id="@+id/scary_movies"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="What are your innermost feelings about horror movies?"
-        android:textSize="10pt"
-        android:layout_below="@+id/radio_travel"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-    </TextView>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/scary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
 
-    <RadioButton android:id="@+id/radio_spooky"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2spooky4me"
-        android:onClick="onRadioButtonClicked"
-        android:layout_below="@+id/scary_movies"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
-    <RadioButton android:id="@+id/radio_all"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="All about them. Wes Craven marathon at my place?"
-        android:onClick="onRadioButtonClicked"
-        android:layout_below="@+id/radio_spooky"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:checked="false" />
-    </RadioGroup>
+                <TextView
+                    android:id="@+id/scary_movies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/radio_travel"
+                    android:text="What are your innermost feelings about horror movies?"
+                    android:textSize="10pt"
+                    android:textColor="@color/general_text"/>
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/radio_politics"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+                <RadioButton
+                    android:id="@+id/radio_spooky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/scary_movies"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="2spooky4me"
+                    android:textColor="@color/general_text"/>
 
-        <TextView
-            android:id="@+id/politics"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Do you care about politics?"
-            android:textSize="10pt"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true">
-        </TextView>
+                <RadioButton
+                    android:id="@+id/radio_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/radio_spooky"
+                    android:checked="false"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="All about them. Wes Craven marathon at my place?"
+                    android:textColor="@color/general_text"/>
+            </RadioGroup>
 
-        <RadioButton android:id="@+id/radio_uninformed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Not a whole lot. The caucus is when again?"
-            android:onClick="onRadioButtonClicked"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_politics"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:textColor="@color/general_text">
 
-        <RadioButton android:id="@+id/radio_voter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Yes! I am informed, registered and ready to debate."
-            android:onClick="onRadioButtonClicked"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:checked="false" />
-    </RadioGroup>
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/radio_friends"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+                <TextView
+                    android:id="@+id/politics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Do you care about politics?"
+                    android:textSize="10pt"
+                    android:textColor="@color/general_text"/>
 
-        <TextView
-            android:id="@+id/Friends"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="What is your go-to friend-date activity?"
-            android:textSize="10pt"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true">
-        </TextView>
+                <RadioButton
+                    android:id="@+id/radio_uninformed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Not a whole lot. The caucus is when again?"
+                    android:textColor="@color/general_text"/>
 
-        <RadioButton android:id="@+id/Tea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tea if I'm feeling adventurous. Netflix and chill = more than likely"
-            android:onClick="onRadioButtonClicked"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+                <RadioButton
+                    android:id="@+id/radio_voter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:checked="false"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Yes! I am informed, registered and ready to debate."
+                    android:textColor="@color/general_text"/>
+            </RadioGroup>
 
-        <RadioButton android:id="@+id/art"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Checking out a gallery."
-            android:onClick="onRadioButtonClicked"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:checked="false" />
-        <RadioButton android:id="@+id/Razzle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Razzle dazzle me. Let's hit up the theatre!"
-            android:onClick="onRadioButtonClicked"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_friends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
 
-        <RadioButton android:id="@+id/workout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Friends who workout together stay together."
-            android:onClick="onRadioButtonClicked"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-    </RadioGroup>
+                <TextView
+                    android:id="@+id/Friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="What is your go-to friend-date activity?"
+                    android:textSize="10pt"
+                    android:textColor="@color/general_text"/>
 
-    </LinearLayout>
+                <RadioButton
+                    android:id="@+id/Tea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Tea if I'm feeling adventurous. Netflix and chill = more than likely"
+                    android:textColor="@color/general_text"/>
+
+                <RadioButton
+                    android:id="@+id/art"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:checked="false"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Checking out a gallery."
+                    android:textColor="@color/general_text"/>
+
+                <RadioButton
+                    android:id="@+id/Razzle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Razzle dazzle me. Let's hit up the theatre!"
+                    android:textColor="@color/general_text"/>
+
+                <RadioButton
+                    android:id="@+id/workout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Friends who workout together stay together."
+                    android:textColor="@color/general_text"/>
+            </RadioGroup>
+
+        </LinearLayout>
     </ScrollView>
 
 </RelativeLayout>

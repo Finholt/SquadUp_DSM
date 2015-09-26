@@ -9,9 +9,6 @@
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-
-
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
             android:layout_height="805dp" android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -30,7 +27,8 @@
                 android:id="@+id/textView"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -40,7 +38,8 @@
                 android:layout_below="@+id/textView"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -50,7 +49,8 @@
                 android:layout_below="@+id/checkBox2"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="@color/general_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -60,7 +60,8 @@
                 android:id="@+id/textView3"
                 android:layout_below="@+id/checkBox3"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -70,7 +71,8 @@
                 android:layout_below="@+id/textView3"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="@color/general_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -80,7 +82,8 @@
                 android:id="@+id/textView4"
                 android:layout_below="@+id/checkBox4"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -90,7 +93,8 @@
                 android:layout_below="@+id/textView4"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -101,7 +105,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:checked="false"
-                android:layout_marginRight="30dp"/>
+                android:layout_marginRight="30dp"
+                android:textColor="@color/general_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -111,7 +116,8 @@
                 android:id="@+id/textView5"
                 android:layout_below="@+id/checkBox6"
                 android:layout_alignRight="@+id/textView9"
-                android:layout_alignEnd="@+id/textView9" />
+                android:layout_alignEnd="@+id/textView9"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -121,7 +127,8 @@
                 android:layout_below="@+id/textView5"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -131,7 +138,8 @@
                 android:layout_below="@+id/checkBox7"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -141,7 +149,8 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:checked="false"
-                android:text="7:00 PM" />
+                android:text="7:00 PM"
+                android:textColor="@color/general_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -151,7 +160,8 @@
                 android:id="@+id/textView6"
                 android:layout_below="@+id/checkBox9"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -161,7 +171,8 @@
                 android:layout_below="@+id/textView6"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -171,7 +182,8 @@
                 android:layout_below="@+id/checkBox10"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="@color/general_text"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -184,7 +196,8 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:background="@drawable/style_button1"
-                android:textColor="@color/button_text"/>
+                android:textColor="@color/button_text"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -194,7 +207,8 @@
                 android:id="@+id/textView7"
                 android:layout_below="@+id/checkBox11"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -204,7 +218,8 @@
                 android:checked="false"
                 android:layout_below="@+id/textView7"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -214,7 +229,8 @@
                 android:layout_below="@+id/checkBox12"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:checked="false" />
+                android:checked="false"
+                android:textColor="@color/general_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -224,7 +240,8 @@
                 android:id="@+id/textView8"
                 android:layout_below="@+id/checkBox13"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -234,7 +251,8 @@
                 android:checked="false"
                 android:layout_below="@+id/textView8"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -244,7 +262,8 @@
                 android:checked="false"
                 android:layout_below="@+id/checkBox14"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="@color/general_text"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -254,7 +273,8 @@
                 android:checked="false"
                 android:layout_below="@+id/checkBox15"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="@color/general_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -263,13 +283,12 @@
                 android:text="Team Trivia"
                 android:id="@+id/textView9"
                 android:layout_below="@+id/checkBox5"
-                android:layout_alignLeft="@+id/textView9"
-                android:layout_alignStart="@+id/textView9"
                 android:layout_toRightOf="@+id/checkBox6"
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox6"
                 android:layout_alignTop="@+id/checkBox6"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="@color/general_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -284,7 +303,8 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox5"
                 android:layout_alignTop="@+id/checkBox5"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="@color/general_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -299,7 +319,8 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox7"
                 android:layout_alignTop="@+id/checkBox7"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="@color/general_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -314,7 +335,8 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox8"
                 android:layout_alignTop="@+id/checkBox8"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="@color/general_text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -329,7 +351,8 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox9"
                 android:layout_alignTop="@+id/checkBox9"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="@color/general_text"/>
 
         </RelativeLayout>
     </LinearLayout>
