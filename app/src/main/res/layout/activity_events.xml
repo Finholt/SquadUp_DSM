@@ -156,7 +156,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6:00 PM      Board Game Night"
+                android:text="6:00 PM"
                 android:id="@+id/checkBox10"
                 android:layout_below="@+id/textView6"
                 android:layout_alignParentLeft="true"
@@ -166,7 +166,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7:30 PM      Broadway Bound"
+                android:text="7:30 PM"
                 android:id="@+id/checkBox11"
                 android:layout_below="@+id/checkBox10"
                 android:layout_alignParentLeft="true"
@@ -199,7 +199,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="9:00 AM      Cooking with Sarah"
+                android:text="9:00 AM"
                 android:id="@+id/checkBox12"
                 android:checked="false"
                 android:layout_below="@+id/textView7"
@@ -209,7 +209,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7:00 PM      Dancing with the DJ"
+                android:text="7:00 PM"
                 android:id="@+id/checkBox13"
                 android:layout_below="@+id/checkBox12"
                 android:layout_alignParentLeft="true"
@@ -234,7 +234,7 @@
                 android:checked="false"
                 android:layout_below="@+id/textView8"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -249,7 +249,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="9:00 AM      Cooking with Sarah"
+                android:text="9:00 AM"
                 android:id="@+id/checkBox16"
                 android:checked="false"
                 android:layout_below="@+id/checkBox15"
@@ -269,13 +269,14 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox6"
                 android:layout_alignTop="@+id/checkBox6"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="@color/eventSecondaryText"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Event Planner Meetup Sip // See"
+                android:text="Event Planner Meetup"
                 android:id="@+id/textView10"
                 android:layout_below="@+id/textView4"
                 android:layout_alignLeft="@+id/textView9"
@@ -284,7 +285,8 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox5"
                 android:layout_alignTop="@+id/checkBox5"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="@color/eventSecondaryText"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -299,7 +301,8 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox7"
                 android:layout_alignTop="@+id/checkBox7"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="@color/eventSecondaryText"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -314,13 +317,14 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox8"
                 android:layout_alignTop="@+id/checkBox8"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="@color/eventSecondaryText"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Small Text"
+                android:text="Wandering Woods: North"
                 android:id="@+id/textView13"
                 android:layout_below="@+id/textView12"
                 android:layout_alignLeft="@+id/textView9"
@@ -329,7 +333,71 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox9"
                 android:layout_alignTop="@+id/checkBox9"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="@color/eventSecondaryText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Board Game Night"
+                android:id="@+id/textView14"
+                android:layout_below="@+id/textView13"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_toRightOf="@+id/checkBox10"
+                android:layout_toEndOf="@+id/checkBox2"
+                android:layout_alignBottom="@+id/checkBox10"
+                android:layout_alignTop="@+id/checkBox10"
+                android:gravity="center"
+                android:textColor="@color/eventSecondaryText"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Broadway Bound"
+                android:id="@+id/textView15"
+                android:layout_below="@+id/textView14"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_toRightOf="@+id/checkBox11"
+                android:layout_toEndOf="@+id/checkBox2"
+                android:layout_alignBottom="@+id/checkBox11"
+                android:layout_alignTop="@+id/checkBox11"
+                android:gravity="center"
+                android:textColor="@color/eventSecondaryText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Cooking With Sarah"
+                android:id="@+id/textView16"
+                android:layout_below="@+id/textView15"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_toRightOf="@+id/checkBox12"
+                android:layout_toEndOf="@+id/checkBox2"
+                android:layout_alignBottom="@+id/checkBox12"
+                android:layout_alignTop="@+id/checkBox12"
+                android:gravity="center"
+                android:textColor="@color/eventSecondaryText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Dancing With Adrian"
+                android:id="@+id/textView17"
+                android:layout_below="@+id/textView16"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_toRightOf="@+id/checkBox13"
+                android:layout_toEndOf="@+id/checkBox2"
+                android:layout_alignBottom="@+id/checkBox13"
+                android:layout_alignTop="@+id/checkBox13"
+                android:gravity="center"
+                android:textColor="@color/eventSecondaryText"/>
 
         </RelativeLayout>
     </LinearLayout>
