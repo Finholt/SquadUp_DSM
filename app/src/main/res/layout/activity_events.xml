@@ -9,9 +9,6 @@
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-
-
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
             android:layout_height="775dp" android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -29,7 +26,7 @@
                 android:layout_below="@+id/logo2"
                 android:text="Sunday, Sept. 20th"
                 android:id="@+id/textView"
-                android:textColor="@color/eventSecondaryText" />
+                android:textColor="@color/eventTitle" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -60,7 +57,7 @@
                 android:layout_below="@+id/checkBox3"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:textColor="@color/eventSecondaryText" />
+                android:textColor="@color/eventTitle" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -79,9 +76,8 @@
                 android:text="Tuesday, Sept 22nd"
                 android:id="@+id/textView4"
                 android:layout_below="@+id/checkBox4"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:textColor="@color/eventSecondaryText" />
+
+                android:textColor="@color/eventTitle" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -111,9 +107,9 @@
                 android:text="Wednesday, Sept. 23rd"
                 android:id="@+id/textView5"
                 android:layout_below="@+id/checkBox6"
-                android:layout_alignRight="@+id/textView9"
-                android:layout_alignEnd="@+id/textView9"
-                android:textColor="@color/eventSecondaryText" />
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/eventTitle" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -154,7 +150,7 @@
                 android:layout_below="@+id/checkBox9"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:textColor="@color/eventSecondaryText" />
+                android:textColor="@color/eventTitle" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -198,7 +194,7 @@
                 android:layout_below="@+id/checkBox11"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:textColor="@color/eventSecondaryText" />
+                android:textColor="@color/eventTitle" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -229,7 +225,7 @@
                 android:layout_below="@+id/checkBox13"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:textColor="@color/eventSecondaryText" />
+                android:textColor="@color/eventTitle" />
 
             <CheckBox
                 android:layout_width="wrap_content"
