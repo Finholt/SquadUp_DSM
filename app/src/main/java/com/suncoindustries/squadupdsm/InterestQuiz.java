@@ -27,8 +27,8 @@ public class InterestQuiz extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
 
-                String toast = String.format("Pronoun selected is:", parent.getItemAtPosition(pos));
-                Toast.makeText(getApplicationContext(), toast, Toast.LENGTH_SHORT).show();
+              //  String toast = String.format("Pronoun selected is:", parent.getItemAtPosition(pos));
+              //  Toast.makeText(getApplicationContext(), toast, Toast.LENGTH_SHORT).show();
              }
         @Override
             public void onNothingSelected(AdapterView<?> parent)
@@ -42,9 +42,8 @@ public class InterestQuiz extends AppCompatActivity {
 
 
 
-    public void completeSignUpProcedure(View view)
-    {
-        Intent intent = new Intent(this, UserProfile.class);
+    public void nextQuizProcedure(View view){
+        Intent intent = new Intent(this, InterestQuiz2.class);
         startActivity(intent);
     }
 
