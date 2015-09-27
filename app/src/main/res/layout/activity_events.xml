@@ -156,7 +156,7 @@
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6:00 PM      Board Game Night"
+                android:text="6:00 PM"
                 android:id="@+id/checkBox10"
                 android:layout_below="@+id/textView6"
                 android:layout_alignParentLeft="true"
@@ -320,7 +320,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Small Text"
+                android:text="Wandering Woods: A Series"
                 android:id="@+id/textView13"
                 android:layout_below="@+id/textView12"
                 android:layout_alignLeft="@+id/textView9"
@@ -329,7 +329,19 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_alignBottom="@+id/checkBox9"
                 android:layout_alignTop="@+id/checkBox9"
-                android:gravity="center" />
+                android:gravity="center"
+                android:textColor="white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Wandering Woods: A Series"
+                android:id="@+id/textView14"
+                android:gravity="center"
+                android:layout_below="@+id/textView6"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_alignStart="@+id/textView13" />
 
         </RelativeLayout>
     </LinearLayout>
