@@ -7,8 +7,297 @@
     tools:context="com.suncoindustries.squadupdsm.OtherProfile"
     android:background="@drawable/background">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/largeiconsargus"/>
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/general_text"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Argus"
+        android:id="@+id/textView50"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="A.K.A. TotallyMagical"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/textView50"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/pink"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="He/Him"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView24"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:layout_marginBottom="20dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Events Attending"
+        android:id="@+id/textView27"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="6:00PM   Sept, 18"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="9:00PM   Sept, 18"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView28"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="5:30PM   Sept, 19"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/textView29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Brett Budzinski - Developments"
+        android:id="@+id/textView31"
+        android:layout_below="@+id/textView27"
+        android:layout_toRightOf="@+id/textView28"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_alignTop="@+id/textView28"
+        android:gravity="center"
+        android:textColor="@color/eventSecondaryText"
+        android:textSize="11dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="It&apos;s Sheepish: An Underwear Comedy"
+        android:id="@+id/textView32"
+        android:layout_below="@+id/textView28"
+        android:layout_toRightOf="@+id/textView29"
+        android:layout_alignBottom="@+id/textView29"
+        android:layout_alignTop="@+id/textView29"
+        android:gravity="center"
+        android:textColor="@color/eventSecondaryText"
+        android:textSize="11dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Roxi Copland Live at The Basement"
+        android:id="@+id/textView33"
+        android:layout_below="@+id/textView29"
+        android:layout_toRightOf="@+id/textView30"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_alignTop="@+id/textView30"
+        android:gravity="center"
+        android:textColor="@color/eventSecondaryText"
+        android:textSize="11dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Suggested Events"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/textView30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/pink"
+        android:onClick="toEventsProcedure"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="My Squad"
+        android:id="@+id/textView35"
+        android:layout_below="@+id/textView34"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/textView35"
+        android:layout_toLeftOf="@+id/textView35"
+        android:layout_toStartOf="@+id/textView35"
+        android:src="@drawable/smalliconsargus"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Argus Filch"
+        android:id="@+id/textView36"
+        android:textColor="@color/eventSecondaryText"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:textSize="11dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="A.K.A TotallyMagical"
+        android:id="@+id/textView37"
+        android:layout_below="@+id/textView36"
+        android:textColor="@color/white"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:textSize="11dp"/>
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/imageView2"
+        android:layout_toLeftOf="@+id/textView35"
+        android:layout_toStartOf="@+id/textView35"
+        android:src="@drawable/smalliconspansy"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pansy Parkinson"
+        android:id="@+id/textView38"
+        android:textColor="@color/eventSecondaryText"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:textSize="11dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="A.K.A MrsMalfoy"
+        android:id="@+id/textView39"
+        android:layout_below="@+id/textView38"
+        android:textColor="@color/white"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:textSize="11dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/imageView3"
+        android:layout_toLeftOf="@+id/textView35"
+        android:layout_toStartOf="@+id/textView35"
+        android:src="@drawable/smalliconsmalfoy"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Draco Malfoy"
+        android:id="@+id/textView40"
+        android:textColor="@color/eventSecondaryText"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:textSize="11dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="A.K.A SlytherinRulez"
+        android:id="@+id/textView41"
+        android:layout_below="@+id/textView40"
+        android:textColor="@color/white"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:textSize="11dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/imageView4"
+        android:layout_toLeftOf="@+id/textView35"
+        android:layout_toStartOf="@+id/textView35"
+        android:src="@drawable/smalliconscornelius"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cornelius Fudge"
+        android:id="@+id/textView42"
+        android:textColor="@color/eventSecondaryText"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:textSize="11dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="A.K.A HesBack"
+        android:id="@+id/textView43"
+        android:layout_below="@+id/textView42"
+        android:textColor="@color/white"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:textSize="11dp"/>
+
 
 </RelativeLayout>
