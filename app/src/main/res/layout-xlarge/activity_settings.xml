@@ -37,7 +37,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -49,8 +48,8 @@
         android:background="@drawable/style_button1"
         android:layout_below="@+id/New_Squad"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="88dp" />
 
 
     <Button
@@ -63,7 +62,7 @@
         android:textColor="@color/general_text"
         android:background="@drawable/style_button1"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
