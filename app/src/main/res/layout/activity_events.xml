@@ -273,7 +273,7 @@
                 android:textColor="@color/general_text"
                 android:text="9:00 AM" />
 
-            <TextView
+            <Button
                 android:id="@+id/textView23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -285,6 +285,8 @@
                 android:layout_toEndOf="@+id/checkBox2"
                 android:layout_toRightOf="@+id/checkBox2"
                 android:gravity="center"
+                android:textAllCaps="false"
+                android:background="@null"
                 android:text="Broadway Bound"
                 android:textColor="@color/eventSecondaryText"
                 android:onClick="eventPopup"/>
