@@ -17,9 +17,7 @@ public class
         setContentView(R.layout.activity_other_profile);
     }
 
-
-    public void toEventsProcedure(View view)
-    {
+    public void toEventsProcedure(View view) {
         Intent intent = new Intent(this, Events.class);
         startActivity(intent);
     }
@@ -42,8 +40,7 @@ public class
         if (id == R.id.action_settings) {
             Intent intent = new Intent(this, Settings.class);
             startActivity(intent);
-        }
-        else if (id == R.id.action_logout) {
+        } else if (id == R.id.action_logout) {
             Intent intent = new Intent(this, Login.class);
             startActivity(intent);
         }

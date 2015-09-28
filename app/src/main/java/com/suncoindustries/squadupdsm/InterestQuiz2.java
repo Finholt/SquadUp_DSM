@@ -17,14 +17,14 @@ public class InterestQuiz2 extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.radio_yes:
                 if (checked)
-                //
+                    //
                     break;
             case R.id.radio_no:
                 if (checked)
-                //
+                    //
                     break;
         }
-}
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +32,7 @@ public class InterestQuiz2 extends AppCompatActivity {
         setContentView(R.layout.activity_interest_quiz2);
     }
 
-    public void completeSignUpProcedure(View view)
-    {
+    public void completeSignUpProcedure(View view) {
         Intent intent = new Intent(this, UserProfile.class);
         startActivity(intent);
     }

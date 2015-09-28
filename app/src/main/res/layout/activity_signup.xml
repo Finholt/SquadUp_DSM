@@ -1,52 +1,56 @@
+<!--Did not actually make it into the final app, but we were too scared to delete anything in Git.-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.suncoindustries.squadupdsm.SignUp">
 
     <Button
+        android:id="@+id/ToQuizButton"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/ToQuizButton"
-        android:text="Next"
-        android:textAllCaps="false"
-        android:onClick="toQuizProcedure"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:onClick="toQuizProcedure"
+        android:text="Next"
+        android:textAllCaps="false" />
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/editText"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="72dp"
-        android:hint="Email" />
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
 
     <EditText
+        android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/editText"
         android:layout_alignLeft="@+id/editText"
         android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
         android:layout_marginTop="37dp"
-        android:hint="New Password"/>
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="textPassword" />
 
     <CheckBox
+        android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I Agree to Terms and Agreements "
-        android:id="@+id/checkBox"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:text="I Agree to Terms and Agreements " />
 
 
 </RelativeLayout>

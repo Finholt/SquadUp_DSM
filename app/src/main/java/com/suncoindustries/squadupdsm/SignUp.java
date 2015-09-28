@@ -1,3 +1,5 @@
+//Not a part of the final app.  We were too scared to try to delete anything with Git
+
 package com.suncoindustries.squadupdsm;
 
 import android.content.Intent;
@@ -15,8 +17,7 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
     }
 
-    public void toQuizProcedure(View view)
-    {
+    public void toQuizProcedure(View view) {
         Intent intent = new Intent(this, InterestQuiz.class);
         startActivity(intent);
     }

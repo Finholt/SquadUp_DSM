@@ -18,27 +18,25 @@ public class Events extends AppCompatActivity {
         setContentView(R.layout.activity_events);
     }
 
-    public void toProfProcedure(View view)
-    {
+    public void toProfProcedure(View view) {
         Toast.makeText(getApplicationContext(), "Events updated successfully.", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, UserProfile.class);
         startActivity(intent);
     }
 
+    //Creates the dialog box that appears when an event is clicked on.  Only functional for top event.
     public void eventPopup(View view) {
 
-        AlertDialog.Builder helpBuilder = new AlertDialog.Builder(this);
-        helpBuilder.setTitle("Broadway Bound");
-        helpBuilder.setMessage("Repertory Theater of Iowa presents BROADWAY BOUND; part three of Neil Simon's acclaimed semi-autobiographical series, The Eugene Trilogy.");
-        helpBuilder.setPositiveButton("Ok",
+        AlertDialog.Builder eventBuilder = new AlertDialog.Builder(this);
+        eventBuilder.setTitle("Broadway Bound");
+        eventBuilder.setMessage("Repertory Theater of Iowa presents BROADWAY BOUND; part three of Neil Simon's acclaimed semi-autobiographical series, The Eugene Trilogy.");
+        eventBuilder.setPositiveButton("Ok",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         // Does nothing but close the dialog
                     }
                 });
-
-        // Remember, create doesn't show the dialog
-        AlertDialog helpDialog = helpBuilder.create();
+        AlertDialog helpDialog = eventBuilder.create();
         helpDialog.show();
     }
 
@@ -60,8 +58,7 @@ public class Events extends AppCompatActivity {
         if (id == R.id.action_settings) {
             Intent intent = new Intent(this, Settings.class);
             startActivity(intent);
-        }
-        else if (id == R.id.action_logout) {
+        } else if (id == R.id.action_logout) {
             Intent intent = new Intent(this, Login.class);
             startActivity(intent);
         }

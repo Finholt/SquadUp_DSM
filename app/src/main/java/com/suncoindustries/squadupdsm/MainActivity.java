@@ -1,3 +1,5 @@
+//Not a part of the final app.  We were too scared to try to delete anything with Git
+
 package com.suncoindustries.squadupdsm;
 
 import android.content.Intent;
@@ -15,20 +17,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void loginProcedure(View view)
-    {
+    public void loginProcedure(View view) {
         Intent intent = new Intent(this, UserProfile.class);
         startActivity(intent);
     }
 
-    public void signUpProcedure(View view)
-    {
+    public void signUpProcedure(View view) {
         Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
 
-    public void otherLogin (View view)
-    {
+    public void otherLogin(View view) {
         Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }

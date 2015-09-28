@@ -18,7 +18,7 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
@@ -30,7 +30,8 @@
                 android:maxHeight="100dp"
                 android:maxWidth="100dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/rsz_logo" />
+                android:src="@drawable/rsz_logo"
+                android:contentDescription="@string/LogoDesc" />
 
             <TextView
                 android:id="@+id/quiztitle"
@@ -38,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="15dp"
-                android:text="Quiz Time!"
+                android:text="@string/Quiztime"
                 android:textColor="@color/general_text"
                 android:textSize="9pt" />
 
@@ -46,14 +47,14 @@
                 android:id="@+id/radio_travel"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/travel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Would you ever kick it and travel the world alone?"
+                    android:text="@string/Quiz1"
                     android:textColor="@color/general_text"
                     android:textSize="9pt" />
 
@@ -62,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioButtonClicked"
-                    android:text="Yes please."
+                    android:text="@string/Quiz2"
                     android:textColor="@color/general_text" />
 
                 <RadioButton
@@ -70,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioButtonClicked"
-                    android:text="No thank you."
+                    android:text="@string/Quiz3"
                     android:textColor="@color/general_text" />
 
 
@@ -80,15 +81,15 @@
                 android:id="@+id/scary"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
 
 
                 <TextView
                     android:id="@+id/scary_movies"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What are your innermost feelings about horror movies?"
+                    android:text="@string/Quiz4"
                     android:textColor="@color/general_text"
                     android:textSize="9pt" />
 
@@ -97,7 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioButtonClicked"
-                    android:text="2spooky4me"
+                    android:text="@string/Quiz5"
                     android:textColor="@color/general_text" />
 
                 <RadioButton
@@ -106,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="onRadioButtonClicked"
-                    android:text="All about them. Wes Craven marathon at my place?"
+                    android:text="@string/Quiz6"
                     android:textColor="@color/general_text" />
             </RadioGroup>
 
@@ -114,15 +115,15 @@
                 android:id="@+id/radio_politics"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:orientation="vertical"
-                android:textColor="@color/general_text"
-                android:layout_marginBottom="15dp">
+                android:textColor="@color/general_text">
 
                 <TextView
                     android:id="@+id/politics"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Do you care about politics?"
+                    android:text="@string/Quiz7"
                     android:textColor="@color/general_text"
                     android:textSize="9pt" />
 
@@ -131,7 +132,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioButtonClicked"
-                    android:text="Not a whole lot. The caucus is when again?"
+                    android:text="@string/Quiz8"
                     android:textColor="@color/general_text" />
 
                 <RadioButton
@@ -140,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="onRadioButtonClicked"
-                    android:text="Yes! I am informed, registered and ready to debate."
+                    android:text="@string/Quiz9"
                     android:textColor="@color/general_text" />
             </RadioGroup>
 
@@ -148,14 +149,14 @@
                 android:id="@+id/radio_friends"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/Friends"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What is your go-to friend-date activity?"
+                    android:text="@string/Quiz10"
                     android:textColor="@color/general_text"
                     android:textSize="9pt" />
 
@@ -164,7 +165,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioButtonClicked"
-                    android:text="Tea if I'm feeling adventurous. Netflix and chill = more than likely"
+                    android:text="@string/Quiz11"
                     android:textColor="@color/general_text" />
 
                 <RadioButton
@@ -173,7 +174,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:onClick="onRadioButtonClicked"
-                    android:text="Checking out a gallery."
+                    android:text="@string/Quiz12"
                     android:textColor="@color/general_text" />
 
                 <RadioButton
@@ -181,7 +182,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioButtonClicked"
-                    android:text="Razzle dazzle me. Let's hit up the theatre!"
+                    android:text="@string/Quiz13"
                     android:textColor="@color/general_text" />
 
                 <RadioButton
@@ -189,7 +190,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="onRadioButtonClicked"
-                    android:text="Friends who workout together stay together."
+                    android:text="@string/Quiz14"
                     android:textColor="@color/general_text" />
             </RadioGroup>
 
@@ -199,7 +200,7 @@
                 android:layout_height="50dp"
                 android:background="@drawable/style_button1"
                 android:onClick="completeSignUpProcedure"
-                android:text="Submit"
+                android:text="@string/Submit"
                 android:textAllCaps="false"
                 android:textColor="@color/button_text" />
 

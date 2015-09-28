@@ -1,10 +1,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="@drawable/background"
     tools:context="com.suncoindustries.squadupdsm.SquadChat">
 
     <ImageView
@@ -15,7 +17,8 @@
         android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/chattopbar" />
+        android:src="@drawable/chattopbar"
+        android:contentDescription="@string/LogoDesc" />
 
     <ImageView
         android:id="@+id/chatcontent"
@@ -25,14 +28,15 @@
         android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/squadchat"/>
+        android:src="@drawable/squadchat"
+        android:contentDescription="@string/ChatPoC" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:hint="Enter your message here"
-        android:textColorHint="@color/hint_color"
-        android:textColor="@color/general_text"/>
+        android:hint="@string/MessagePrompt"
+        android:textColor="@color/general_text"
+        android:textColorHint="@color/hint_color" />
 
 </RelativeLayout>

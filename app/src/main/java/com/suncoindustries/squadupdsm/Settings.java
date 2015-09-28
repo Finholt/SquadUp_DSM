@@ -16,19 +16,18 @@ public class Settings extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
     }
 
-    public void toQuizProcedure(View view)
-    {
+    public void toQuizProcedure(View view) {
         Intent intent = new Intent(this, InterestQuiz.class);
         startActivity(intent);
-}
+    }
 
-    public void Settings(View view)
-    {
+    //Toast for requesting a new squad.  This method would hook up to our backend if we had one.
+    public void newSquad(View view) {
         Toast.makeText(getApplicationContext(), "New Squad Requested", Toast.LENGTH_SHORT).show();
     }
 
-    public void toEvents(View view)
-    {
+    //Toast for updating google cal.  API not implemented in time
+    public void toEvents(View view) {
         Toast.makeText(getApplicationContext(), "Updated from Google Calendar", Toast.LENGTH_SHORT).show();
     }
 

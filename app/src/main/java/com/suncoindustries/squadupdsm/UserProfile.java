@@ -15,20 +15,18 @@ public class UserProfile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
     }
 
-    public void toOtherProfileProcedure(View view)
-    {
+    //Listeners to navigate from the central profile page to other pages
+    public void toOtherProfileProcedure(View view) {
         Intent intent = new Intent(this, OtherProfile.class);
         startActivity(intent);
     }
 
-    public void toEventsProcedure(View view)
-    {
+    public void toEventsProcedure(View view) {
         Intent intent = new Intent(this, Events.class);
         startActivity(intent);
     }
 
-    public void toChatProcedure(View view)
-    {
+    public void toChatProcedure(View view) {
         Intent intent = new Intent(this, SquadChat.class);
         startActivity(intent);
     }
@@ -51,8 +49,7 @@ public class UserProfile extends AppCompatActivity {
         if (id == R.id.action_settings) {
             Intent intent = new Intent(this, Settings.class);
             startActivity(intent);
-        }
-        else if (id == R.id.action_logout) {
+        } else if (id == R.id.action_logout) {
             Intent intent = new Intent(this, Login.class);
             startActivity(intent);
         }

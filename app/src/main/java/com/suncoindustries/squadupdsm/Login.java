@@ -11,16 +11,18 @@ import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
-    //int counter = 3;
+    //Takes user directly to their profile.  Could not actually implement facebook api in time
     public void login(View view) {
         Intent intent = new Intent(this, UserProfile.class);
         startActivity(intent);
     }
 
-    public void Register (View view){
-        Intent intent = new Intent(this,InterestQuiz.class);
+    //Takes user through the quiz process.  Could not actually implement facebook api in time
+    public void Register(View view) {
+        Intent intent = new Intent(this, InterestQuiz.class);
         startActivity(intent);
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -18,7 +18,7 @@
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/logosmall"
@@ -30,7 +30,8 @@
                 android:maxHeight="100dp"
                 android:maxWidth="100dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/rsz_logo" />
+                android:src="@drawable/rsz_logo"
+                android:contentDescription="@string/LogoDesc" />
 
             <TextView
                 android:id="@+id/TextViewTitle"
@@ -38,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/logosmall"
                 android:layout_centerHorizontal="true"
-                android:text="About Yourself"
+                android:text="@string/AboutYourself"
                 android:textColor="@color/general_text"
                 android:textSize="9pt" />
 
@@ -49,7 +50,7 @@
                 android:layout_below="@+id/TextViewTitle"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="15dp"
-                android:hint="Username"
+                android:hint="@string/Username"
                 android:imeOptions="actionNext"
                 android:inputType="textPersonName"
                 android:textColor="@color/general_text"
@@ -61,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/username"
                 android:layout_centerHorizontal="true"
-                android:text="Preferred Pronoun"
+                android:text="@string/PrefPronoun"
                 android:textColor="@color/general_text"
                 android:textSize="9pt" />
 
@@ -80,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/pronouns"
                 android:layout_centerHorizontal="true"
-                android:text="Interests (Select all that apply)"
+                android:text="@string/Interests"
                 android:textColor="@color/general_text"
                 android:textSize="9pt" />
 
@@ -91,7 +92,7 @@
                 android:layout_below="@id/intereststext"
                 android:layout_marginLeft="100dp"
                 android:layout_marginStart="100dp"
-                android:text="Circus"
+                android:text="@string/Circus"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -102,7 +103,7 @@
                 android:layout_below="@id/icheck1"
                 android:layout_marginLeft="100dp"
                 android:layout_marginStart="100dp"
-                android:text="Culinary"
+                android:text="@string/Culinary"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -113,7 +114,7 @@
                 android:layout_below="@id/icheck2"
                 android:layout_marginLeft="100dp"
                 android:layout_marginStart="100dp"
-                android:text="Dance"
+                android:text="@string/Dance2"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -124,7 +125,7 @@
                 android:layout_below="@id/icheck3"
                 android:layout_marginLeft="100dp"
                 android:layout_marginStart="100dp"
-                android:text="Education"
+                android:text="@string/Education"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -135,7 +136,7 @@
                 android:layout_below="@id/icheck4"
                 android:layout_marginLeft="100dp"
                 android:layout_marginStart="100dp"
-                android:text="Film"
+                android:text="@string/Film"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -146,7 +147,7 @@
                 android:layout_below="@id/icheck5"
                 android:layout_marginLeft="100dp"
                 android:layout_marginStart="100dp"
-                android:text="Kids"
+                android:text="@string/Kids"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -157,7 +158,7 @@
                 android:layout_below="@id/icheck6"
                 android:layout_marginLeft="100dp"
                 android:layout_marginStart="100dp"
-                android:text="Literary"
+                android:text="@string/Literary"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -168,7 +169,7 @@
                 android:layout_below="@id/icheck7"
                 android:layout_marginLeft="100dp"
                 android:layout_marginStart="100dp"
-                android:text="Music"
+                android:text="@string/Music"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -179,7 +180,7 @@
                 android:layout_below="@id/icheck8"
                 android:layout_marginLeft="100dp"
                 android:layout_marginStart="100dp"
-                android:text="Social"
+                android:text="@string/Social"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -190,7 +191,7 @@
                 android:layout_below="@id/icheck9"
                 android:layout_marginLeft="100dp"
                 android:layout_marginStart="100dp"
-                android:text="Theater"
+                android:text="@string/Theater"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -202,7 +203,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="100dp"
                 android:layout_marginStart="100dp"
-                android:text="Visual Art"
+                android:text="@string/VisArt"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -212,7 +213,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/icheck11"
                 android:layout_centerHorizontal="true"
-                android:text="Co-ed Squad?"
+                android:text="@string/Coed"
                 android:textColor="@color/general_text"
                 android:textSize="9pt" />
 
@@ -223,7 +224,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/CoEdText"
-                android:text="Her Squad"
+                android:text="@string/Her"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -234,7 +235,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/CoEdText"
-                android:text="His Squad"
+                android:text="@string/His"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -245,7 +246,7 @@
                 android:layout_below="@+id/ccheck1"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="15dp"
-                android:text="Mixed Squad"
+                android:text="@string/Mixed"
                 android:textColor="@color/general_text"
                 android:textSize="10pt" />
 
@@ -259,7 +260,7 @@
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/style_button2"
                 android:onClick="googleCalButton"
-                android:text="Import Google Calendar"
+                android:text="@string/Import"
                 android:textAllCaps="false"
                 android:textColor="@color/pressed_button" />
 
@@ -272,7 +273,7 @@
                 android:layout_below="@+id/GoogleCalButton"
                 android:background="@drawable/style_button1"
                 android:onClick="nextQuizProcedure"
-                android:text="Next"
+                android:text="@string/Next"
                 android:textAllCaps="false"
                 android:textColor="@color/button_text" />
 
