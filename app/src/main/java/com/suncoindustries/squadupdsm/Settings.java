@@ -29,8 +29,7 @@ public class Settings extends AppCompatActivity {
 
     public void toEvents(View view)
     {
-        Intent intent = new Intent(this,Events.class);
-        startActivity(intent);
+        Toast.makeText(getApplicationContext(), "Updated from Google Calendar", Toast.LENGTH_SHORT).show();
     }
 
     @Override

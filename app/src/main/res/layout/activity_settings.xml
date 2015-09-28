@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/toEvents"
-        android:text="Change Availibility/Interests"
+        android:text="Update from Google Calendar"
         android:textAllCaps="false"
         android:onClick="toEvents"
         android:textColor="@color/general_text"
