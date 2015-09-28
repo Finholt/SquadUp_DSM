@@ -9,6 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.suncoindustries.squadupdsm.InterestQuiz2">
 
+
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/ScrollView01"
         android:layout_width="fill_parent"

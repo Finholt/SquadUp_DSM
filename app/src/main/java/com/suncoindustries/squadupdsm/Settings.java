@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class Settings extends AppCompatActivity {
 
@@ -18,6 +19,17 @@ public class Settings extends AppCompatActivity {
     public void toQuizProcedure(View view)
     {
         Intent intent = new Intent(this, InterestQuiz.class);
+        startActivity(intent);
+}
+
+    public void Settings(View view)
+    {
+        Toast.makeText(getApplicationContext(), "New Squad Requested", Toast.LENGTH_SHORT).show();
+    }
+
+    public void toEvents(View view)
+    {
+        Intent intent = new Intent(this,Events.class);
         startActivity(intent);
     }
 
