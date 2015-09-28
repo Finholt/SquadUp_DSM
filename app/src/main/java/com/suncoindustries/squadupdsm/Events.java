@@ -1,5 +1,7 @@
 package com.suncoindustries.squadupdsm;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +23,23 @@ public class Events extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Events updated successfully.", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, UserProfile.class);
         startActivity(intent);
+    }
+
+    public void eventPopup(View view) {
+
+        AlertDialog.Builder helpBuilder = new AlertDialog.Builder(this);
+        helpBuilder.setTitle("Broadway Bound");
+        helpBuilder.setMessage("Repertory Theater of Iowa presents BROADWAY BOUND; part three of Neil Simon's acclaimed semi-autobiographical series, The Eugene Trilogy.");
+        helpBuilder.setPositiveButton("Ok",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Does nothing but close the dialog
+                    }
+                });
+
+        // Remember, create doesn't show the dialog
+        AlertDialog helpDialog = helpBuilder.create();
+        helpDialog.show();
     }
 
     @Override

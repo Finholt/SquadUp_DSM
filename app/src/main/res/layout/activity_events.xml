@@ -286,7 +286,8 @@
                 android:layout_toRightOf="@+id/checkBox2"
                 android:gravity="center"
                 android:text="Broadway Bound"
-                android:textColor="@color/eventSecondaryText" />
+                android:textColor="@color/eventSecondaryText"
+                android:onClick="eventPopup"/>
 
             <TextView
                 android:id="@+id/textView22"
