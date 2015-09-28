@@ -13,5 +13,6 @@
 
     <color name="white">#ffffff</color>
     <color name="pink">#D1465B</color>
+    <color name="black">#000000</color>
 
 </resources>
