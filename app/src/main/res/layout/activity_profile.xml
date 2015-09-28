@@ -238,7 +238,8 @@
                 android:layout_toLeftOf="@+id/textView35"
                 android:layout_toStartOf="@+id/textView35"
                 android:src="@drawable/smalliconsargus"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginBottom="8dp"
+                android:onClick="toOtherProfileProcedure"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
