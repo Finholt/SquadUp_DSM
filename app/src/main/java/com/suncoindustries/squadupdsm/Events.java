@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class Events extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class Events extends AppCompatActivity {
 
     public void toProfProcedure(View view)
     {
+        Toast.makeText(getApplicationContext(), "Events updated successfully.", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, UserProfile.class);
         startActivity(intent);
     }
