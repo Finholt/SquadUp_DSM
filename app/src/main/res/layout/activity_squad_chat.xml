@@ -7,8 +7,33 @@
     android:background="@drawable/background"
     tools:context="com.suncoindustries.squadupdsm.SquadChat">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/logotop"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/chattopbar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/chatcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logotop"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/squadchat"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Type your message here"
+        android:textColorHint="@color/hint_color"
         android:textColor="@color/general_text"/>
 
 </RelativeLayout>
