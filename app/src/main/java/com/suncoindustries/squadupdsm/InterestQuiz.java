@@ -27,24 +27,24 @@ public class InterestQuiz extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
 
-              //  String toast = String.format("Pronoun selected is:", parent.getItemAtPosition(pos));
-              //  Toast.makeText(getApplicationContext(), toast, Toast.LENGTH_SHORT).show();
-             }
-        @Override
-            public void onNothingSelected(AdapterView<?> parent)
-            {
-            Toast.makeText(getApplicationContext(), "Please select a pronoun", Toast.LENGTH_SHORT).show();
-             }
+                //  String toast = String.format("Pronoun selected is:", parent.getItemAtPosition(pos));
+                //  Toast.makeText(getApplicationContext(), toast, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                Toast.makeText(getApplicationContext(), "Please select a pronoun", Toast.LENGTH_SHORT).show();
+            }
         });
     }
 
 
-    public void googleCalButton(View view){
+    public void googleCalButton(View view) {
         Toast.makeText(getApplicationContext(), "Calendar Imported Successfully", Toast.LENGTH_SHORT).show();
     }
 
 
-    public void nextQuizProcedure(View view){
+    public void nextQuizProcedure(View view) {
         Intent intent = new Intent(this, InterestQuiz2.class);
         startActivity(intent);
     }
