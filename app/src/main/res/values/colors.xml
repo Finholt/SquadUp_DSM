@@ -7,4 +7,11 @@
     <color name="button_text">#ffffff</color>
     <color name="general_text">#ffffff</color>
     <color name="hint_color">#f2f2f2</color>
+    <color name="eventSecondaryText">#D1465B</color>
+    <color name="eventTitle">#ffffff</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="pink">#D1465B</color>
+
 </resources>

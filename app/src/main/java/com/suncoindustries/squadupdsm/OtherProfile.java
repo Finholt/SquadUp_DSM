@@ -5,13 +5,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-public class OtherProfile extends AppCompatActivity {
+public class
+
+        OtherProfile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_other_profile);
+    }
+
+
+    public void toEventsProcedure(View view)
+    {
+        Intent intent = new Intent(this, Events.class);
+        startActivity(intent);
     }
 
     @Override
@@ -31,6 +41,10 @@ public class OtherProfile extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Intent intent = new Intent(this, Settings.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.action_logout) {
+            Intent intent = new Intent(this, Login.class);
             startActivity(intent);
         }
 

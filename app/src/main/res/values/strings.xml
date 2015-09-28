@@ -27,9 +27,9 @@
     <string name="title_activity_squad_chat">SquadChat</string>
 	
 	 <string-array name="pronouns">
-        <item>He</item>
-        <item>She</item>
-        <item>They/Them</item>
+        <item>He/Him/His</item>
+        <item>She/Her/Hers</item>
+        <item>They/Them/Theirs</item>
     </string-array>
 	
 	<string-array name="months">
