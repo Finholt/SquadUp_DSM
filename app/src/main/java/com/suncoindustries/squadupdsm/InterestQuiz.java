@@ -39,7 +39,9 @@ public class InterestQuiz extends AppCompatActivity {
     }
 
 
-
+    public void googleCalButton(View view){
+        Toast.makeText(getApplicationContext(), "Calendar Imported Successfully", Toast.LENGTH_SHORT).show();
+    }
 
 
     public void nextQuizProcedure(View view){

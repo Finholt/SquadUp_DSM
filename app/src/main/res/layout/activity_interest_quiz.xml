@@ -11,64 +11,273 @@
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/ScrollView01"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:scrollbars="vertical">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical">
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/logosmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rsz_logo" />
 
             <TextView
                 android:id="@+id/TextViewTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. Enter your Username"
+                android:layout_below="@+id/logosmall"
+                android:layout_centerHorizontal="true"
+                android:text="About Yourself"
                 android:textColor="@color/general_text"
-                android:textSize="10pt"/>
+                android:textSize="9pt" />
 
             <EditText
                 android:id="@+id/username"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/ScrollView01"
-                android:hint="Enter name here"
+                android:layout_below="@+id/TextViewTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:hint="Username"
                 android:imeOptions="actionNext"
                 android:inputType="textPersonName"
                 android:textColor="@color/general_text"
-                android:textColorHint="@color/hint_color"/>
+                android:textColorHint="@color/hint_color" />
 
             <TextView
                 android:id="@+id/Pronoun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2. What is your preferred pronoun?"
+                android:layout_below="@+id/username"
+                android:layout_centerHorizontal="true"
+                android:text="Preferred Pronoun"
                 android:textColor="@color/general_text"
-                android:textSize="10pt"/>
+                android:textSize="9pt" />
 
             <Spinner
                 android:id="@+id/pronouns"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/Pronoun"
+                android:layout_marginBottom="15dp"
                 android:background="@android:drawable/btn_dropdown"
                 android:spinnerMode="dropdown" />
-        </LinearLayout>
-    </ScrollView>
 
-    <Button
-        android:id="@+id/NextQuizButton"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@drawable/style_button1"
-        android:onClick="nextQuizProcedure"
-        android:text="Next"
-        android:textAllCaps="false"
-        android:textColor="@color/button_text" />
+            <TextView
+                android:id="@+id/intereststext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pronouns"
+                android:layout_centerHorizontal="true"
+                android:text="Interests (Select all that apply)"
+                android:textColor="@color/general_text"
+                android:textSize="9pt" />
+
+            <CheckBox
+                android:id="@+id/icheck1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/intereststext"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="Circus"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/icheck2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icheck1"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="Culinary"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/icheck3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icheck2"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="Dance"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/icheck4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icheck3"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="Education"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/icheck5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icheck4"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="Film"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/icheck6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icheck5"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="Kids"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/icheck7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icheck6"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="Literary"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/icheck8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icheck7"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="Music"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/icheck9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icheck8"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="Social"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/icheck10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icheck9"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="Theater"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/icheck11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icheck10"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginStart="100dp"
+                android:text="Visual Art"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/CoEdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icheck11"
+                android:layout_centerHorizontal="true"
+                android:text="Co-ed Squad?"
+                android:textColor="@color/general_text"
+                android:textSize="9pt" />
+
+            <CheckBox
+                android:id="@+id/ccheck1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/CoEdText"
+                android:text="Her Squad"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/ccheck2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/CoEdText"
+                android:text="His Squad"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <CheckBox
+                android:id="@+id/ccheck3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ccheck1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:text="Mixed Squad"
+                android:textColor="@color/general_text"
+                android:textSize="10pt" />
+
+            <Button
+                android:id="@+id/GoogleCalButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ccheck3"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/style_button2"
+                android:onClick="googleCalButton"
+                android:text="Import Google Calendar"
+                android:textAllCaps="false"
+                android:textColor="@color/pressed_button" />
+
+            <Button
+                android:id="@+id/NextQuizButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/GoogleCalButton"
+                android:background="@drawable/style_button1"
+                android:onClick="nextQuizProcedure"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/button_text" />
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
