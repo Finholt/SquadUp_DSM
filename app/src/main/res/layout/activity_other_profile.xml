@@ -47,8 +47,6 @@
         android:textStyle="italic"
         android:layout_marginBottom="20dp"/>
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,20 +81,10 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textColor="@color/white"
-        android:textSize="11dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="5:30PM   Sept, 19"
-        android:id="@+id/textView30"
-        android:layout_below="@+id/textView29"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="@color/white"
         android:textSize="11dp"
-        android:layout_marginBottom="5dp" />
+        android:layout_marginBottom="20dp"/>
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -126,44 +114,18 @@
         android:gravity="center"
         android:textColor="@color/eventSecondaryText"
         android:textSize="11dp"
-        android:layout_marginLeft="10dp"/>
+        android:layout_marginLeft="10dp"
+        />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Roxi Copland Live at The Basement"
-        android:id="@+id/textView33"
-        android:layout_below="@+id/textView29"
-        android:layout_toRightOf="@+id/textView30"
-        android:layout_alignBottom="@+id/textView30"
-        android:layout_alignTop="@+id/textView30"
-        android:gravity="center"
-        android:textColor="@color/eventSecondaryText"
-        android:textSize="11dp"
-        android:layout_marginLeft="10dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Suggested Events"
-        android:id="@+id/textView34"
-        android:layout_below="@+id/textView30"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="@color/pink"
-        android:onClick="toEventsProcedure"
-        android:layout_marginBottom="20dp"
-        android:textStyle="bold|italic"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="My Squad"
+        android:text="Their Squad"
         android:id="@+id/textView35"
-        android:layout_below="@+id/textView34"
+        android:layout_below="@+id/textView29"
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"
         android:layout_marginBottom="10dp"
@@ -177,13 +139,13 @@
         android:layout_below="@+id/textView35"
         android:layout_toLeftOf="@+id/textView35"
         android:layout_toStartOf="@+id/textView35"
-        android:src="@drawable/smalliconsargus"
+        android:src="@drawable/smalliconsdolores"
         android:layout_marginBottom="8dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Argus Filch"
+        android:text="Dolores Umbridge"
         android:id="@+id/textView36"
         android:textColor="@color/eventSecondaryText"
         android:layout_alignTop="@+id/imageView2"
@@ -194,7 +156,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="A.K.A TotallyMagical"
+        android:text="A.K.A DottyBridge"
         android:id="@+id/textView37"
         android:layout_below="@+id/textView36"
         android:textColor="@color/white"
